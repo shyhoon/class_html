@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* > 사용하면 순수 부모 자식관계에서만 적용
+        >없으면 순수 부모관계 상관없이 둘다 적용 */
+        .aa .cc {
+            background-color: darkgreen;
+        }
+
+        .aa>.cc {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="aa">
+        <div class="cc">
+            sec1
+        </div>
+    </div>
+
+
+    <div class="aa">
+        <div class="bb">
+            <div class="cc">
+                sec2
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

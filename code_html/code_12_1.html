@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: cyan;
+        }
+
+        /* div를 부모로 가지는 span들한테 적용한다는 코드 */
+        div span {
+            text-align: center;
+            padding: 10px;
+        }
+
+
+        /* div 중 클래스가 yellowbox중에 span인 녀석에 적용 */
+        div.yellow_box span {
+            background-color: chocolate;
+        }
+
+
+        div#c_box span {
+            background-color: cornflowerblue;
+            padding: 10px;
+        }
+
+        div span.blue_span {
+            background-color: burlywood;
+        }
+
+        div span#c_span {
+            text-align: center;
+            padding: 10px;
+            background-color: crimson;
+        }
+
+        ul>li {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="yellow_box">
+        <span>
+            yellow_box div 클래스 내의 span태그 입니다.
+        </span>
+    </div>
+
+    <div id="c_box">
+        <span>
+            c_box div 아이디 내의 span태그 입니다.
+        </span>
+    </div>
+
+    <div>
+        <span class="blue_span">
+            div내의 blue_span 클래스 span입니다.
+        </span>
+    </div>
+
+    <div>
+        <span id="c_span">
+            div 내의 c_span 아이디 입니다.
+        </span>
+    </div>
+
+    <br><br><br>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+
+
+
+</body>
+
+</html>
