@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            display: grid;
+            grid-template-columns: auto auto;
+            border: 5px solid #000;
+            width: 900px;
+            height: 200px;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .parent div {
+            color: #fff;
+            text-align: center;
+            font-size: 30px;
+            background-color: pink;
+            width: 100px;
+            height: 100px;
+        }
+
+        .parent div:nth-child(2) {
+            /* 컬럼내에서 수평정렬을  부모와 관계없이 개별적으로 조절할 수 있다. */
+            /* justify-self: end; */
+            justify-self: start;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div>1</div>
+        <div>2</div>
+    </div>
+</body>
+
+</html>
