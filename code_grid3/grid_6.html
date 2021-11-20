@@ -8,33 +8,22 @@
     <title>Document</title>
     <style>
         .parent {
-            border: 5px solid black;
-            width: 600px;
-            height: 200px;
+            border: 5px solid #000;
             background-color: khaki;
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            justify-items: center;
-            align-items: center;
+            grid-template-areas: 'item1 item1 item1 item1 item1';
         }
 
         .parent div {
-            color: #fff;
             text-align: center;
             font-size: 30px;
-            background-color: pink;
-
-
-
+            border: 1px solid #000;
         }
 
-        .parent div:nth-child(2) {
-
-            /* 자식요소 너비 값과 높이 값이 없는경우
-            좌우 상하로 가득 채움 */
-
-            justify-self: stretch;
-            align-self: stretch;
+        .parent div.item {
+            background-color: red;
+            grid-area: item1;
+            grid-row: 1;
         }
     </style>
 </head>
@@ -43,6 +32,10 @@
     <div class="parent">
         <div>1</div>
         <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div class="item">6</div>
     </div>
 </body>
 

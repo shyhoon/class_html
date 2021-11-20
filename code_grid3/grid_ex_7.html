@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .frame {
+            width: 960px;
+            display: grid;
+            /* height: 100vh; */
+            /* justify-content: center;
+            align-content: center; */
+            /* grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto; */
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-rows: repeat(2, minmax(200px, auto));
+            gap: 10px;
+        }
+
+        .frame div {
+            border-radius: 10px;
+            height: 200px;
+            padding: 20px;
+            justify-items: start;
+            /* box-shadow: 5px 5px 5px 5px rgb(204, 202, 202); */
+            box-shadow: 30px 10px 10px 10px rgba(0, 0, 0, 0.20);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="frame">
+
+        <div>Lorem ipsum dolor sit amet.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sequi omnis ipsa, a, rerum reiciendis sed
+            explicabo doloribus, dolor eum autem blanditiis aspernatur. Sequi dolorem fuga, perferendis expedita
+            distinctio autem?
+        </div>
+        <div>Lorem, ipsum.</div>
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem ipsum dolor sit amet.</div>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+
+    </div>
+</body>
+
+</html>

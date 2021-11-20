@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            border: 5px solid #000;
+            background-color: khaki;
+            display: grid;
+            /* 어떤 문자를 쓰던지 한칸을 띄운다 */
+            /* 부모요소와 자식요소가 함께 쓴느 속성
+            '' or ""로 묶어서 써줘야 한다 */
+            grid-template-areas: 'item123 item123 . . . .';
+        }
+
+        .parent div {
+            text-align: center;
+            font-size: 30px;
+            border: 1px solid #000;
+        }
+
+        .parent div.item {
+            background-color: red;
+            /* grid-area: item1; */
+        }
+
+        .parent div:nth-child(8) {
+            background-color: blue;
+            grid-area: item123;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="item">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+</body>
+
+</html>
